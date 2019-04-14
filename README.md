@@ -6,10 +6,11 @@ Usage LizzZ
 
 #include "brotli/decode.h"
 #include "brotli/encode.h"
-
 #pragma comment(lib,"brotli.lib")
 
-int brotliEnc(std::string data, int type) {
+class testBrotli {
+public:
+	int brotliEnc(std::string data, int type) {
 
 		std::cout << "brotli encode\r\n";
 
@@ -27,3 +28,4 @@ int brotliEnc(std::string data, int type) {
 		//std::cout << output;
 		return 1;
 	}
+}
